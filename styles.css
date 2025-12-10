@@ -17,6 +17,12 @@
   --shadow-subtle: 0 10px 35px rgba(0, 0, 0, 0.32);
   --transition-fast: 0.18s ease-out;
   --transition-med: 0.3s ease-out;
+  
+  /* Variables pour les Couleurs du logo Paslumi */
+  --color-dark-blue: #2c4460;
+  --color-light-blue: #8fa0b5;
+  --color-gold: #c3a466;
+  --color-text: #e0efff;
 }
 
 *,
@@ -106,12 +112,10 @@ p {
   gap: 10px;
 }
 
-.logo-mark {
-  width: 20px;
-  height: 20px;
-  border-radius: 7px;
-  background: conic-gradient(from 180deg, #00d1ff, #ffffff, #1e90ff, #00d1ff);
-  box-shadow: 0 0 18px rgba(0, 209, 255, 0.9);
+.logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -1012,5 +1016,107 @@ textarea:focus {
     align-items: flex-start;
   }
 }
+
+/* --- Styles pour le logo Paslumi en CSS --- */
+
+.paslumi-logo-container {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    overflow: visible;
+    flex-shrink: 0;
+    transform: scale(1.2);
+}
+
+/* 🏙️ Les Bâtiments (Forme complexe) */
+.buildings {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 35px;
+    height: 28px;
+    background-color: var(--color-dark-blue);
+    clip-path: polygon(
+        0% 100%, 
+        0% 50%, 
+        15% 50%, 
+        15% 20%, 
+        40% 20%,
+        50% 0%,
+        60% 20%, 
+        80% 20%, 
+        80% 50%, 
+        100% 50%, 
+        100% 100%
+    );
+    transform: perspective(50px) rotateX(5deg) skewX(-10deg);
+}
+
+/* 🚧 Le Chemin (Les segments) */
+.path-segment {
+    position: absolute;
+    bottom: 12px;
+    height: 8px;
+    width: 8px;
+    transform: perspective(20px) rotateX(15deg) skewX(-10deg); 
+}
+
+.segment-dark-blue {
+    background-color: var(--color-dark-blue);
+    left: 8px;
+    z-index: 2;
+}
+.segment-light-blue {
+    background-color: var(--color-light-blue);
+    left: 17px;
+    z-index: 1;
+}
+
+/* 💡 La Lumière (Point lumineux) */
+.light-source {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: perspective(20px) rotateX(15deg) skewX(-10deg);
+    z-index: 10;
+}
+
+.light-base {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-gold);
+    border-radius: 50% 50% 0 0;
+}
+
+.light-glow {
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-gold);
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 2.5px;
+}
+
+/* Création des rayons de lumière */
+.light-ray {
+    position: absolute;
+    width: 2px;
+    height: 5px;
+    background-color: var(--color-gold);
+}
+
+.ray-1 {
+    transform: rotate(30deg);
+    top: -5px;
+    right: -3px;
+}
+.ray-2 {
+    transform: rotate(-10deg);
+    top: -3px;
+    right: -6px;
+}
+
+
 
 
