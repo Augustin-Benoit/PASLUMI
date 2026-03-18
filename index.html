@@ -223,7 +223,7 @@
           <div class="gallery-filters">
             <button class="filter-btn active" data-filter="all">Tous</button>
             <button class="filter-btn" data-filter="magasins">Magasins</button>
-            <button class="filter-btn" data-filter="bureaux">Bureaux</button>
+            <button class="filter-btn" data-filter="parc">Parc</button>
             <button class="filter-btn" data-filter="restaurants">Restaurants</button>
             <button class="filter-btn" data-filter="evenements">Événements</button>
             <button class="filter-btn" data-filter="exterieur">Extérieur</button>
@@ -238,7 +238,7 @@
                 <p>Dalles LED encastrée</p>
               </figcaption>
             </figure>
-            <figure class="gallery-item reveal" data-category="bureaux">
+            <figure class="gallery-item reveal" data-category="parc">
               <div class="gallery-img" style="background-image: url('image/dalles-colorful.jpg');"></div>
               <figcaption>
                 <h3>jardin d'enfants </h3>
@@ -267,7 +267,7 @@
               </figcaption>
             </figure>
             <figure class="gallery-item reveal" data-category="evenements">
-              <div class="gallery-img" style="background-image: url('image/dalles-fuchsia.jpg');"></div>
+              <div class="gallery-img" style="background-image: url('image/dalles-bleue-blanc-rouge.jpg');"></div>
               <figcaption>
                 <h3>Événement – Ambiance fuchsia</h3>
                 <p>Dalles LED Sur Mesure – Éclairage dynamique</p>
@@ -281,7 +281,7 @@
               </figcaption>
             </figure>
             <figure class="gallery-item reveal" data-category="exterieur">
-              <div class="gallery-img" style="background-image: url('image/dalle-purple.jpg'), url('image/dalles-fuchsia.jpg'), url('image/dalles-rose.jpg');"></div>
+              <div class="gallery-img" style="background-image: url('image/dalle-verte.jpg');"></div>
               <figcaption>
                 <h3>Parvis lumineux – Hôtel</h3>
                 <p>Dalles LED Extérieur – Mise en lumière architecturale</p>
@@ -313,18 +313,22 @@
             <article class="card soft reveal">
               <h3>Expertise</h3>
               <p>
-                Plus de X années d’expérience dans l’éclairage LED architectural et décoratif,
+                Plus de 2 années d’expérience dans l’éclairage LED architectural et décoratif,
                 aux côtés des professionnels et des marques exigeantes.
               </p>
             </article>
             <article class="card soft reveal">
               <h3>Matériaux écoresponsables</h3>
               <div class="huitre-list">
-                <img src="image/huitre_bleue.jpg" alt="Huître bleue" class="huitre-thumb" />
-                <img src="image/huitre_blanche.jpg" alt="Huître blanche" class="huitre-thumb" />
-                <img src="image/huitre_rouge.jpg" alt="Huître rouge" class="huitre-thumb" />
-                <img src="image/huitre_verte.jpg" alt="Huître verte" class="huitre-thumb" />
-                <img src="image/huitre_beige.jpg" alt="Huître beige" class="huitre-thumb" />
+                <div class="huitre-row">
+                  <img src="image/huitre_bleue.jpg" alt="Huître bleue" class="huitre-thumb" />
+                  <img src="image/huitre_blanche.jpg" alt="Huître blanche" class="huitre-thumb" />
+                  <img src="image/huitre_rouge.jpg" alt="Huître rouge" class="huitre-thumb" />
+                </div>
+                <div class="huitre-row huitre-row-bottom">
+                  <img src="image/huitre_verte.jpg" alt="Huître verte" class="huitre-thumb" />
+                  <img src="image/huitre_beige.jpg" alt="Huître beige" class="huitre-thumb" />
+                </div>
               </div>
               <p>
                 Composants sélectionnés pour leur fiabilité, leur rendu lumineux et leur
@@ -334,7 +338,7 @@
             <article class="card soft reveal">
               <h3>Garantie &amp; fiabilité</h3>
               <p>
-                Produits garantis X ans, conformes aux normes en vigueur et testés en
+                Produits garantis 10 ans, conformes aux normes en vigueur et testés en
                 laboratoire pour une performance durable.
               </p>
             </article>
@@ -499,10 +503,20 @@
               </div>
               <div class="map-placeholder card soft">
                 <p class="map-title">Carte &amp; accès</p>
-                <p class="small">
-                  Intégrez ici une iframe Google Maps centrée sur votre adresse pour faciliter
-                  l’accès à vos locaux.
-                </p>
+                <iframe
+                  class="map-embed"
+                  title="Carte PASLUMI - 19 Rue Haddock, 77000 Chessy"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=19+Rue+Haddock,+77000+Chessy,+France&output=embed"
+                ></iframe>
+                <a
+                  class="map-link"
+                  href="https://www.google.com/maps?q=19+Rue+Haddock,+77000+Chessy,+France"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ouvrir l’itinéraire sur Google Maps</a
+                >
               </div>
             </div>
           </div>

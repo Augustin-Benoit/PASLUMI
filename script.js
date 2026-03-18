@@ -29,10 +29,14 @@ filterButtons.forEach((btn) => {
       const category = item.getAttribute('data-category');
       if (filter === 'all' || category === filter) {
         item.style.display = '';
+        item.classList.add('visible');
       } else {
         item.style.display = 'none';
+        item.classList.remove('visible');
       }
     });
+
+    onScrollReveal();
   });
 });
 
